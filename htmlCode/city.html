@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta description="Page for cityName">
+        <meta description="Page for city_id.name">
         <link rel="stylesheet" href="index.css">
-        <title>cityName, stateAbbr</title>
+        <title>city_id.name, city_id.state</title>
     </head>
     <header>
         <h1>Local Politician Data Aggregator</h1>
@@ -12,7 +12,7 @@
     </header>
     <body>
         <main>
-            <h2 id="cityID">cityName, stateAbbr</h2>
+            <h2 id="cityID">city_id.name, city_id.state</h2>
             <form action="#">
                 <label for="office" required>Choose an office:</label>
                 <select name="office" id="">
@@ -35,6 +35,38 @@
     
                     </optgroup>
                 </select>
+                <table class="politician table" border="1">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Office</td>
+                            <td>District</td>
+                            <td>Boston.gov link</td>
+                            <td>Campaign Link</td>
+                            <td>Party</td>
+                            <td>Email</td>
+                            <td>Phone</td>
+                            <td>Address</td>
+                            <td>Date Elected</td>
+                            <td>Biography</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>politician_id.name</td>
+                            <td>politician_id.office_id.name</td>
+                            <td>politician_id.district</td>
+                            <td>politician_id.gov_link</td>
+                            <td>politician_id.campaign_link</td>
+                            <td>politician_id.party</td>
+                            <td>politician_id.email</td>
+                            <td>politician_id.phone</td>
+                            <td>politician_id.address</td>
+                            <td>politician_id.date_elected</td>
+                            <td>politician_id.biography</td>
+                        </tr>
+                    </tbody>
+                </table>
             </form>
         </main>
 
